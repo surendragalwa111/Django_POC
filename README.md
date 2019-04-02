@@ -26,6 +26,7 @@ Step-5
     python manage.py shell
 
   run following command to check all data of a model
+     
      model_name.objects.all()
 
 Step-6 
