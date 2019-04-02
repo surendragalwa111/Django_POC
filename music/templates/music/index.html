@@ -1,0 +1,17 @@
+{% extends 'music/base.html' %}
+{% block title %}
+  Index Page
+{% endblock %}
+
+{% block body %}
+  <h2>Here are all songs:-</h2>
+  {% if all_songs %}
+    <ul>
+      {% for song in all_songs %}
+        <li> <a href="{% url 'music:detail' song.id %}"> {{song.title}} </a> </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>You don't have any song</p>
+  {% endif  %}
+{% endblock %}
