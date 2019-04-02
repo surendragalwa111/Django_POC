@@ -43,5 +43,6 @@ Step-7
   Register model on admin page
   Go to admin.py in your app
   import, register your models with following code:-
+    
     admin.site.register(model_name)
   
